@@ -62,7 +62,7 @@ export default function (Glide, Components, Events) {
       const { steps, direction } = move
 
       // By default assume that size of view is equal to one slide
-      let viewSize = 1
+      let viewSize = Glide.settings.perView
 
       // While direction is `=` we want jump to
       // a specified index described in steps.
